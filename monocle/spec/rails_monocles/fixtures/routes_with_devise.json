@@ -1,0 +1,8 @@
+{
+  "authentication": true,
+  "entities": [
+    {
+      "name": "Author"
+    }
+  ]
+}

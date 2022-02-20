@@ -1,0 +1,11 @@
+{
+  "components": [
+    { "title": "New post" },
+    { "form": 
+      { "fields" : [
+        { "label": "Title", "attribute": "title", "type": "text" },
+        { "label": "Writer", "attribute": "author", "type": "text" }
+      ]}
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<p class="something">foo</p>
+
+<img src="a.png"/>
+
+<% @bars.each do |bar| %>
+  Hallo
+<% end %>
+
+<% if @foo %>
+  foo
+<% else %>
+  not foo
+<% end %>
+
+<% unless @foo %>
+  not foo
+<% else %>
+  foo
+<% end %>
+
+</body>
+</html>

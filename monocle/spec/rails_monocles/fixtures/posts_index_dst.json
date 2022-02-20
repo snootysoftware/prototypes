@@ -1,0 +1,32 @@
+{
+  "components": [
+    { "title": "Posts" },
+    { "table":
+      { "columns" : [
+          { "header": "Title", "content": { "link_to": { "title_attribute": "title" } } },
+          { "header": "Writer", "content": { "text": { "attribute": "author" } } },
+          { "header": "Actions", "content": { "actions": ["destroy"] } }
+        ]
+      }
+    },
+    { "table":
+      { "columns" : []
+      }
+    },
+    { "table":
+      { "columns" : [
+          { "header": "", "content": { "link_to": { "title_attribute": "XXX" } } }
+        ]
+      }
+    },
+    { "form": 
+      { "fields" : [
+        { "label": "Title", "attribute": "title", "type": "text" },
+        { "label": "Writer", "attribute": "author", "type": "text" },
+        { "label": "Published", "attribute": "published", "type": "checkbox" },
+        { "label": "Credits", "attribute": "credits", "type": "number"}
+      ]}
+    },
+    { "link_to": { "action": "new" }}
+  ]
+}

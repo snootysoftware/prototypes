@@ -1,0 +1,34 @@
+{
+	"model": "Post",
+  "default_allowed_fields": ["title", "body", "published"],
+  "actions": {
+    "index": {},
+    "show": {},
+    "new": {},
+    "edit": {},
+    "create": {
+      "on_success": {
+        "set_notice": "Post was successfully created.",
+        "url": {
+          "helper": "processed_object"
+        }
+      }
+    },
+    "update": {
+      "on_success": {
+        "set_notice": "Post was successfully updated.",
+        "url": {
+          "helper": "processed_object"
+        }
+      }
+    },
+    "destroy": {
+      "on_success": {
+        "set_notice": "Post was successfully destroyed.",
+        "url": {
+          "helper": "list_of_objects"
+        }
+      }
+    }
+  }
+}

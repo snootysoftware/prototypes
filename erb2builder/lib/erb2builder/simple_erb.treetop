@@ -1,0 +1,43 @@
+grammar SimpleERB
+  rule template
+    (erb / comment / element / text)* {
+      def content
+        elements.map {|e| e.content }
+      end
+    }
+  end
+
+  rule text
+    . {
+      def content
+        [:text, text_value]
+      end
+    }
+  end
+
+  rule erb
+    '<%' (!'%>' .)* '%>' {
+      def content
+        [:erb, text_value]
+      end
+    }
+  end
+
+  rule comment
+    '<!--' (!'-->' .)* '-->' {
+      def content
+        [:comment, text_value]
+      end
+    }
+  end
+
+  rule element
+    '<' (erb / (!'>' text))* '>' {
+      def content
+        #require 'pry';binding.pry if text_value.include?('cake')
+        [:element,  text_value]
+        #elements.map { |e| e.content }
+      end
+    }
+  end
+end

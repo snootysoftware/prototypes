@@ -1,0 +1,14 @@
+{
+	"model": "Post",
+  "default_allowed_fields": ["title", "body", "published"],
+  "actions": {
+    "create": {
+      "on_success": {
+        "set_notice": "Post was successfully created.",
+        "url": {
+          "helper": "list_of_objects"
+        }
+      }
+    }
+  }
+}

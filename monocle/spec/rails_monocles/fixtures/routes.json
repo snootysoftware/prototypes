@@ -1,0 +1,10 @@
+{
+  "entities": [
+    {
+      "name": "Post"
+    },
+    {
+      "name": "Author"
+    }
+  ]
+}

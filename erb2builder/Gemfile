@@ -1,0 +1,24 @@
+ruby "2.5.1"
+source 'https://rubygems.org'
+
+gem 'parser', "2.5.1", require: ['parser/current']
+gem 'unparser'
+gem 'astrolabe'
+gem 'polyglot'
+gem 'treetop'
+gem 'erubis'
+gem 'hashie'
+gem 'nokogiri'
+gem 'nokogumbo'
+gem 'html2slim'
+gem 'slim'
+gem 'htmlcompressor'
+
+group :test do
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'awesome_print'
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'm'
+end

@@ -1,6 +1,6 @@
 # Snooty Software Prototypes
 
-This repository contains a few prototypes of code manipulation tools for Ruby. They're not production ready, but may be a good jumping off point. We're not actively supporting any of them, but feel free to contact us (info@snootysoftware.com). If you want to do something interesting with them, we may be able to help. 
+This repository contains a few prototypes of code manipulation tools for Ruby. They're not production ready, but may be a good jumping-off point. We're not actively supporting any of them, but feel free to contact us (info@snootysoftware.com). If you want to do something interesting with them, we may be able to help. 
 
 We highly recommend reading the related blog posts before diving into the code (links below).
 

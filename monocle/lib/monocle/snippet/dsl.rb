@@ -39,7 +39,7 @@ module Monocle
         if options[:match]
           self.instance_exec(&options[:match])
         elsif options[:data_path]
-          query_dst(options[:data_path]).to_sym
+          query_dst(options[:data_path])
         else
           raise 'Invalid options'
         end
@@ -202,8 +202,8 @@ module Monocle
       define_method(:"replace_#{id}", &block)
     end
 
-    def self.define_matcher id, options, &block
-      define_method(:"match_options_#{id}") { options }
+    def self.define_matcher id, options=nil, &block
+      define_method(:"match_options_#{id}") { options } if options
       define_method(:"match_#{id}?", &block)
     end
   end

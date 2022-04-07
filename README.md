@@ -4,6 +4,9 @@ This repository contains a few prototypes of code manipulation tools for Ruby. T
 
 We highly recommend reading the related blog posts before diving into the code (links below).
 
+[Monocle](https://blog.luitjes.it/posts/monocle/)
+[erb2builder](https://blog.luitjes.it/posts/erb2builder/)
+
 ## Getting started
 
 Monocle, erb2builder and Astroturf have passing test suites on Ruby version 2.5.1. I ran into a few failing specs with newer versions, but it's probably an easy fix.
@@ -18,7 +21,7 @@ This library can convert an ERB HTML template to an XML builder template, and th
 
 ## Monocle
 
-TODO add link to blogpost once I post it
+[Here's a blogpost that goes into deep detail about how to use this library and how it was built.](https://blog.luitjes.it/posts/monocle/)
 
 Monocle is a bi-directional code generation library. You know how you can use an ERB template and some local variables to generate Ruby code, just like a rails scaffold? Monocle lets you define templates in a similar way. The big difference is that these templates are two-way/reversible. Meaning you can parse existing code and get the original template and local variables. If you define your templates right, you can even preserve custom code written after code generation.
 
@@ -34,7 +37,7 @@ This was originally a paid product, so it was split up into a [front-end gem](ht
 
 ## Astroturf
 
-This contains a few utilities for working with AST's. Among other things it let you query AST's by XPath. [Here's an older post explaining how that all works.](https://github.com/snootysoftware/textractor-cli)
+This contains a few utilities for working with ASTs. Among other things it let you query ASTs by XPath. [Here's an older post explaining how that all works.](https://blog.luitjes.it/posts/using-xpath-to-rewrite-ruby-code-with-ease/)
 
 ## Contributors
 

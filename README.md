@@ -4,8 +4,8 @@ This repository contains a few prototypes of code manipulation tools for Ruby. T
 
 We highly recommend reading the related blog posts before diving into the code (links below).
 
-[Monocle](https://blog.luitjes.it/posts/monocle/)
-[erb2builder](https://blog.luitjes.it/posts/erb2builder/)
+- [Monocle](https://blog.luitjes.it/posts/monocle/)
+- [erb2builder](https://blog.luitjes.it/posts/erb2builder/)
 
 ## Getting started
 

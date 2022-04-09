@@ -21,7 +21,7 @@ This library can convert an ERB HTML template to an XML builder template, and th
 
 ## Monocle
 
-[Here's a blogpost that goes into deep detail about how to use this library and how it was built.](https://blog.luitjes.it/posts/monocle/)
+[Here's a blogpost that goes into deep detail about how to use this library and how it was built.](https://blog.luitjes.it/posts/monocle-bidirectional-code-generation/)
 
 Monocle is a bi-directional code generation library. You know how you can use an ERB template and some local variables to generate Ruby code, just like a rails scaffold? Monocle lets you define templates in a similar way. The big difference is that these templates are two-way/reversible. Meaning you can parse existing code and get the original template and local variables. If you define your templates right, you can even preserve custom code written after code generation.
 
